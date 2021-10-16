@@ -1,0 +1,18 @@
+high_var_array = np.array([1, 100, 200, 300, 4000, 5000])
+low_var_array = np.array([2, 4, 6, 8, 10])
+
+np.var(high_var_array), np.var(low_var_array)
+
+(4296133.472222221, 8.0)
+
+np.std(high_var_array), np.std(low_var_array)
+
+(2072.711623024829, 2.8284271247461903)
+
+np.mean(high_var_array), np.mean(low_var_array)
+
+(1600.1666666666667, 6.0)
+%matplotlib inline
+import matplotlib.pyplot as plt
+plt.hist(high_var_array)
+plt.show()
